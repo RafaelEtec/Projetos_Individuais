@@ -9,7 +9,6 @@ public class Teste {
                 
         System.out.println("Insira a quantidade de números a serem ordenados: ");
         int tamanhoArray = ent.nextInt();
-        
         int[] sequencia = new int[tamanhoArray];
         
         for (int pos = 0; pos < tamanhoArray; pos++) {
@@ -27,10 +26,8 @@ public class Teste {
                     sequencia[proxPos] = guarda;
                 }
             }
-        }
-        
-        for (int pos = 0; pos < tamanhoArray; pos++) {
+            
             System.out.println("pos: "+pos+" - "+sequencia[pos]);
-        }
+        }   
     }
 }
