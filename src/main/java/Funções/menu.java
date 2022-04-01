@@ -9,10 +9,10 @@ public class menu {
         
         System.out.println(
                   " |------ O que você deseja avaliar? ------| \n"
-                + "<A> Sorting System (Crescente)      \n"
-                + "<B> Sorting System (Decrescente)    \n"
-                + "<> \n"
-                + "<> \n"
+                + "<A> Sorting System (Crescente)              \n"
+                + "<B> Sorting System (Decrescente)            \n"
+                + "<C> Sorting Text   (Crescente)              \n"
+                + "<D> Sorting Text   (Decrescente)            \n"
                 + "<> \n"
                 + "<S> Sair \n");
         String escolha = ent.next();
@@ -31,6 +31,20 @@ public class menu {
                  * Ordena os números inseridos de forma Decrescente
                 **/
                 Funções.Todas.sortingSystem(Funções.Entrada.entIntArray(), escolha);
+                break;
+            case "c":
+                System.out.println(" ---| Sorting Text (Crescente) |--- \n");
+                /**
+                 * Ordena os textos baseado no numero de caracteres de forma Crescente
+                **/
+                Funções.Todas.sortingText(Funções.Entrada.entStringArray(), escolha);
+                break;
+            case "d":
+                System.out.println(" ---| Sorting Text (Decrescente) |--- \n");
+                /**
+                 * Ordena os textos baseado no numero de caracteres de forma Decrescente
+                **/
+                Funções.Todas.sortingText(Funções.Entrada.entStringArray(), escolha);
                 break;
             case "s":
                 System.out.println(" ---| Saindo do Programa |--- \n");
