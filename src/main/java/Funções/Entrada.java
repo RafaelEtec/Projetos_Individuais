@@ -19,4 +19,20 @@ public class Entrada {
         
         return entIntArray;
     }
+    
+    public static String[] entStringArray() {
+        Scanner ent = new Scanner(System.in);
+        
+        System.out.println("Insira a quantidade de texto a ser armazenado: ");
+        int tamanhoArray = ent.nextInt();
+        String[] entStringArray = new String[tamanhoArray];
+        
+        for (int pos = 0; pos < tamanhoArray; pos++) {
+            System.out.println("pos: "+pos+" - Insira o texto da posição: ");
+            String text = ent.next();
+            entStringArray[pos] = text;
+        }
+        
+        return entStringArray;
+    }
 }
