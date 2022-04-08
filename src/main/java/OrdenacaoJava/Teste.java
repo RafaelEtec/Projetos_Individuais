@@ -5,7 +5,7 @@ import java.util.Scanner;
 **/
 public class Teste {
     public static void main(String[] args) {
-        textoMaior();
+        entInt2val();
     }
     
     public static void sortingSystemTest() {
@@ -60,5 +60,20 @@ public class Teste {
             
             System.out.println("pos: "+pos+" - "+entStringArray[pos]+" - "+entStringArray[pos].length()+" letras");
         }
+    }
+    
+    public static int[] entInt2val() {
+        Scanner ent = new Scanner(System.in);
+        
+        int[] entInt2val = new int[2];
+        
+        System.out.println("Insira o primeiro valor: ");
+        entInt2val[0] = ent.nextInt();
+        System.out.println("Insira o segundo valor: ");
+        entInt2val[1] = ent.nextInt();
+        for (int i = 0; i < entInt2val.length; i++) {
+            System.out.println(entInt2val[i]);
+        }
+        return entInt2val;
     }
 }
