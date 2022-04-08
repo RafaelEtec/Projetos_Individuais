@@ -14,6 +14,14 @@ public class menu {
                 + "<C> Sorting Text   (Crescente)              \n"
                 + "<D> Sorting Text   (Decrescente)            \n"
                 + "<> \n"
+                + "<> \n"
+                + "<> \n"
+                + "<> \n"
+                + "<> \n"
+                + "<> \n"
+                + "<> \n"
+                + "<> \n"
+                + "<> \n"
                 + "<S> Sair \n");
         String escolha = ent.next();
         
@@ -46,6 +54,7 @@ public class menu {
                 **/
                 Funções.Todas.sortingText(Funções.Entrada.entStringArray(), escolha);
                 break;
+                
             case "s":
                 System.out.println(" ---| Saindo do Programa |--- \n");
                 break;
