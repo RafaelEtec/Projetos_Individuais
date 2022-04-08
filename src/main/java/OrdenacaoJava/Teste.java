@@ -5,7 +5,20 @@ import java.util.Scanner;
 **/
 public class Teste {
     public static void main(String[] args) {
-        entInt2val();
+        Scanner ent = new Scanner(System.in);
+        fatorial();
+    }
+    
+    public static void fatorial() {
+        int n = 0;
+        // ^ Indique o valor de n
+        int nAnterior = 0, res = 0;
+        for (nAnterior = n - 1; nAnterior > 0; nAnterior--) {
+            res = n * nAnterior;
+            System.out.println(n+" x "+nAnterior+" = "+res);
+            n = res;
+        }
+        // ^ loop responsável pela repetição da multiplicação
     }
     
     public static void sortingSystemTest() {
@@ -75,5 +88,40 @@ public class Teste {
             System.out.println(entInt2val[i]);
         }
         return entInt2val;
+    }
+    
+    public static void atividade6estagio() {
+    int[][] matriz = new int[3][3];
+        int[][] resultado = new int[3][3];
+        int linhas;
+        int colunas;
+        int i;
+        int j;
+        int k;
+        
+        matriz[0][0] = 3;
+        matriz[0][1] = 4;
+        matriz[0][2] = 5;
+        
+        linhas = 3;
+        colunas = 1;
+        
+        for (j = 0; j < linhas; j++) {
+            for (i = 0; i < linhas; i++) {
+                resultado[i][j] = 0;
+                
+                for (k = 0; k < colunas; k++) {
+                    resultado[i][j] = resultado [i][j] + matriz[k][i] * matriz[k][j];
+                }
+                
+            }
+            
+        }
+        for (i = 0; i < linhas; i++) {
+            for (j = 0; j < linhas; j++) {
+                System.out.println(resultado[i][j]);
+                System.out.println(" - ");              
+            }
+        }
     }
 }
